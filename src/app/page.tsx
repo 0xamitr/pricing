@@ -4,92 +4,46 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <h1 className={styles.heading}>Assignment: Recreated the pricing component</h1>
+      <section className={styles.section}>
+        <h2 className={styles.head2}>API Pricing</h2>
+        <p>Our API pricing is based on the model used and the number of tokens processed. Here's a breakdown of the costs:</p>
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th className={styles.thead}>API</th>
+              <th className={styles.thead}>Model</th>
+              <th className={styles.thead}>Price per 1K tokens</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className={styles.tdata}>OpenAI</td>
+              <td className={styles.tdata}>GPT-3.5</td>
+              <td className={styles.tdata}>$0.002</td>
+            </tr>
+            <tr>
+              <td className={styles.tdata}>OpenAI</td>
+              <td className={styles.tdata}>GPT-4</td>
+              <td className={styles.tdata}>$0.03</td>
+            </tr>
+            <tr>
+              <td className={styles.tdata}>Together AI</td>
+              <td className={styles.tdata}>Llama-2-70b</td>
+              <td className={styles.tdata}>$0.0008</td>
+            </tr>
+            <tr className={styles.lastrow}>
+              <td className={styles.tdata}>Together AI</td>
+              <td className={styles.tdata}>Llama-2-13b</td>
+              <td className={styles.tdata}>$0.0006</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 className={styles.head3}>Token Estimation</h3>
+        <p>On average, 1 token is approximately 4 characters or 0.75 words. For precise pricing, we recommend using our token calculator tool.</p>
+        <h3 className={styles.head3}>Billing</h3>
+        <p>You will only be charged for the tokens used in generating the book. The API tracks token usage and bills accordingly. Detailed usage reports are available in your account dashboard.</p>
+      </section>
     </main>
   );
 }
