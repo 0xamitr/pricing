@@ -1,10 +1,9 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1 className={styles.heading}>Assignment: Recreated the pricing component</h1>
+      <h1 className={styles.heading}>{"Assignment: Recreated the pricing component"}</h1>
       <section className={styles.section}>
         <h2 className={styles.head2}>API Pricing</h2>
         <p>Our API pricing is based on the model used and the number of tokens processed. Here's a breakdown of the costs:</p>
