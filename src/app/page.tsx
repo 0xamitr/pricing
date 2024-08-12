@@ -10,7 +10,7 @@ export default function Home() {
     <main className={styles.main}>
       <Toggle darkMode={darkMode} setIsDarkMode={setIsDarkMode}/>
       <h1 className={styles.heading}>Assignment: Recreated the pricing component</h1>
-      <section className={!darkMode? styles.section: styles.section + " " + styles.dark}>
+      <section className={darkMode? styles.section: styles.section + " " + styles.dark}>
         <h2 className={styles.head2}>API Pricing</h2>
         <p>Our API pricing is based on the model used and the number of tokens processed. Here's a breakdown of the costs:</p>
         <table className={styles.table}>
