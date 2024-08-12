@@ -20,7 +20,6 @@
   color: var(--secondary-color);
 }
 
-
 .section {
   background-color: var(--section-background);
   border-radius: 8px;
@@ -74,4 +73,17 @@
   .tdata {
     font-size: 0.85rem;
   }
+}
+
+.dark{
+  color: black;
+  background-color: white;
+}
+
+.dark h2{
+  color: blue;
+}
+
+.dark h3{
+  color: blue;
 }

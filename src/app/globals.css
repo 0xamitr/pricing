@@ -21,3 +21,9 @@ body {
   margin: 0;
   padding: 0;
 }
+
+#dark{
+  background-color: var(--text-color);
+  color: var(--background-color);
+
+}
